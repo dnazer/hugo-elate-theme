@@ -1,12 +1,24 @@
-	<section id="fh5co-home" data-section="home" style="background-image: url(images/full_image_2.jpg);" data-stellar-background-ratio="0.5">
+	<section id="fh5co-home" data-section="home" style="background-image: url(images/hero-background.jpg);" data-stellar-background-ratio="0.5">
 		<div class="gradient"></div>
 		<div class="container">
 			<div class="text-wrap">
 				<div class="text-inner">
 					<div class="row">
+						<img src="images/logo.png"  width="200" height="200">
+					</div>
+					<div class="row">
 						<div class="col-md-8 col-md-offset-2">
 							<h1 class="to-animate">{{ with .Site.Params.hero.title }}{{ . | markdownify }}{{ end }}</h1>
 							<h2 class="to-animate">{{ with .Site.Params.hero.subtitle }}{{ . | markdownify }}{{ end }}</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<form accept-charset='UTF-8' action='https://app.formester.com/forms/76c5f180-cf0f-420f-a6dd-37936a98bba2/submissions' method='POST'>
+								<label for="email-address"></label>
+								<input type="email" id="email-address" name="email">
+								<button type="submit">Subscribe</button>
+							</form>
 						</div>
 					</div>
 				</div>
